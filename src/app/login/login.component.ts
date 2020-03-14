@@ -11,51 +11,57 @@ import { Observable } from 'rxjs';
 })
 export class LoginComponent  implements OnInit  {
   
-  user: User;
-  msg: string;
-  isNew: boolean;
+  // user: User;
+  // msg: string;
+  // isNew: boolean;
 
 
-  constructor(private service: UserService,
-    private actRoute: ActivatedRoute,
-    private router: Router) { }
+ constructor () { }
+  
+  ngOnInit()  {
 
-  ngOnInit(): void {
-    let id = this.actRoute.snapshot.params.id;
-
-    if (id) {
-      this.isNew = false;
-      this.service.getById(id).subscribe(
-        (data) => {
-          this.user = data;
-        }
-      );
-    } else {
-      this.isNew = true;
-      this.user = {
-        id: 0,
-        username: '',
-        password: ''
-        
-      };
-    }
   }
 
-  save() {
-    let ob: Observable<User>;
 
-    if (this.isNew) {
-      ob = this.service.add(this.user);
-    }
-    ob.subscribe(
-      (data) => {
+
+
+
+// void {
+//     let id = this.actRoute.snapshot.params.id;
+
+//     if (id) {
+//       this.isNew = false;
+//       this.service.getById(id).subscribe(
+//         (data) => {
+//           this.user = data;
+//         }
+//       );
+//     } else {
+//       this.isNew = true;
+//       this.user = {
+//         id: 0,
+//         username: '',
+//         password: ''
         
-        this.router.navigateByUrl("/cat");
-      },
-      (errResponse) => {
-        this.msg = errResponse.error;
+//       };
+//     }
+//   }
 
-      }
-    );
-  }
+//   save() {
+//     let ob: Observable<User>;
+
+//     if (this.isNew) {
+//       ob = this.service.add(this.user);
+//     }
+//     ob.subscribe(
+//       (data) => {
+        
+//         this.router.navigateByUrl("/cat");
+//       },
+//       (errResponse) => {
+//         this.msg = errResponse.error;
+
+//       }
+//     );
+//   }
 }

@@ -1,22 +1,23 @@
+
 <form   (ngSubmit)="save()">
-    <div class="imglogin">
-      <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-    </div>
-    
-    <div class="login ">
-      <label ><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname"   [(ngModel)]="user.username" />
-    
-      <label ><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw"    [(ngModel)]="user.password" />
-     
-      <button (click)="ngSubmit" >Login</button><br><br>
-   
-    </div>
+  <div class="imglogin">
+    <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+  </div>
   
-    <div class="login" style="background-color:#f1f1f1">
+  <div class="login ">
+    <label ><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname"   />
+  
+    <label ><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" />
+   
+    <button (click)="ngSubmit" routerLink="/cat/">Login</button><br><br>
+ 
+  </div>
+
+  <div class="login"  style="background-color:#f1f1f1">
+  
+    <br> 
     
-      <br> 
-      
-    </div>
-  </form>
+  </div>
+</form>

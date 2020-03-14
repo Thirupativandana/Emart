@@ -1,1 +1,37 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="assets\contactus.png"style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php" (ngSubmit)="save()">
+        <label for="fname"> Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." [(ngModel)]="contact.firstName">
+        <!-- <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="contact.lastName"> -->
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="text" id="mnumber" name="mnumber" placeholder="Your number.." [(ngModel)]="contact.mobilenumber">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." [(ngModel)]="contact.email">
+        
+        <label for="subject">Comment</label>
+        <textarea id="subject" name="subject" placeholder="Write something...."  [(ngModel)]="contact.comment"style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

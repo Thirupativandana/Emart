@@ -5,7 +5,6 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CategoryComponent } from './category/category.component';
 
-import { ContactComponent } from './contact/contact.component';
 import { ElectonicComponent } from './electonic/electonic.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { GroceriesComponent } from './groceries/groceries.component';
@@ -34,15 +33,21 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { SellerSignupComponent } from './seller-signup/seller-signup.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { Product1Component } from './product1/product1.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+// import { FooterComponent } from './footer/footer.component';
+import { OrderComponent } from './order/order.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
-{path:'newuser',component:RegistrationComponent},
+    {path:'',component:HomeComponent},
+    {path:'newuser',component:RegistrationComponent},
     {path:'existinguser',component:LoginComponent},
     {path:'cat',component:CategoryComponent},
-    {path:'contact',component:ContactComponent},
-    {path: 'prdt',component:ProductComponent},
+    {path: 'prd',component:ProductComponent},
     {path:'ele',component:ElectonicComponent},
     {path:'clth',component:ClothesComponent},
     {path:'gre',component:GroceriesComponent},
@@ -68,7 +73,14 @@ const routes: Routes = [
     {path:'cart',component:CartComponent},
     {path:'check',component:CheckoutComponent},
     {path:'adc',component:AddCategoryComponent},
-    {path:'sup',component:SellerSignupComponent}
+    {path:'sup',component:SellerSignupComponent},
+    {path:'prdt',component:Product1Component},
+    {path:'for',component:ForgetpasswordComponent},
+    // {path:'footer',component:FooterComponent},
+    {path:'order',component:OrderComponent},
+    {path:'addp',component:AddproductComponent},
+    {path:'contact',component:ContactComponent}
+     
     
     
 ];

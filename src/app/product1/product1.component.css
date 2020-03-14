@@ -1,0 +1,28 @@
+.container{
+    margin-top: 100PX;
+    }
+    .newarrival{
+    background: green;
+    width: 50px
+    
+    
+    }
+    .col-md-7 h2{
+    
+       color: #555;
+    }
+    .starts{
+        height: 75px;
+    }
+    .price{
+        color: #fe980f;
+        font-size: 26px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    .cart{
+        background-color: #FE980F;
+        color:#FFFFFF;
+        font-size: 15px;
+        margin-left:20px;
+    }

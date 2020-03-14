@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,6 @@ import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { HomeComponent } from './home/home.component';
 import {ActivatedRoute} from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
 import { ElectonicComponent } from './electonic/electonic.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { GroceriesComponent } from './groceries/groceries.component';
@@ -38,18 +38,26 @@ import { AddCategoryComponent } from './add-category/add-category.component';
 import { SellerSignupComponent } from './seller-signup/seller-signup.component';
 import{HttpClient, HttpClientModule} from '@angular/common/http';
 import { RegistrationComponent } from './registration/registration.component';
+import { Product1Component } from './product1/product1.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+// import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { OrderComponent } from './order/order.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ContactComponent } from './contact/contact.component';
 
 
-@NgModule({
+
+@NgModule({ 
   declarations: [
-    AppComponent,
+    AppComponent, 
     LoginComponent,
     RegistrationComponent,
     ProductComponent,
     CategoryComponent,
     HomeComponent,
   
-    ContactComponent,
+  
     ElectonicComponent,
     ClothesComponent,
     GroceriesComponent,
@@ -75,7 +83,14 @@ import { RegistrationComponent } from './registration/registration.component';
     CartComponent,
     CheckoutComponent,
     AddCategoryComponent,
-    SellerSignupComponent
+    SellerSignupComponent,
+    Product1Component,
+    ForgetpasswordComponent,
+    // FooterComponent,
+    HeaderComponent,
+    OrderComponent,
+    AddproductComponent,
+    ContactComponent
  
 
   ],

@@ -1,15 +1,23 @@
 .container-form { max-width: 600px; margin: 0 auto; }
+.loginimg{
+background: url(src/assets/backgroundimage.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
 form {
     border: 3px solid #f1f1f1;
-    background-color:silver;
+   
+   
+   background-size: cover;
     width:30%;
     left: 50%;
     top: 50%;
-    margin-left: -25%;
+    margin-left: -20%;
     position: absolute;
     margin-top: -15%;
   }
-  
   
   input[type=text], input[type=password] {
     width: 100%;
@@ -36,7 +44,7 @@ form {
   }
   
   
- 
+  
   
   .imglogin {
     text-align: center;
